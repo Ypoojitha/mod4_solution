@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment Page</title>
+	<style>
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+}
+
+div.container {
+	background-color: grey;
+	color:black;
+	margin:20px 0 20px 0;
+	border: 2px solid black;
+	padding:5px;
+	width: 30%;
+	position:relative;
+	margin-left:auto;
+	margin-right: auto;
+}
+.box1{
+background-color: pink;
+color:black;
+text-align: right;
+border: 2px solid black;
+width: 20%;
+margin-left: auto;
+}
+
+.box2{
+background-color: maroon;
+color:black;
+text-align: right;
+border: 2px solid black;
+width: 20%;
+margin-left: auto;
+}
+
+
+.box3{
+background-color: yellow;
+color:black;
+text-align: right;
+border: 2px solid black;
+width: 20%;
+margin-left: auto;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #p1 {
+    width: 80%;
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #p1 {
+    width: 50%;
+  }
+  #p2 {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: blue;
+  }
+}
+
+
+
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<div class="container">
+<div class="box1" align="right">
+<p>Chicken</p></div>
+<p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p>
+</div>
+
+
+<div class="container">
+<div class="box2">
+<p>Beef</p></div>
+<p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p>
+</div>
+
+
+<div class="container">
+<div class="box3">
+<p>Sushi</p></div>
+<p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p>
+</div>
+</body>
+</html>
