@@ -8,8 +8,9 @@ width:335px;
 height:240px;
 background-color:grey;
 float:left;
-margin-left:10px;
+margin-left:50px;
 border: 2px solid black;
+margin-bottom: 30px;
 display:block;
 }
 
@@ -20,7 +21,8 @@ height:240px;
 background-color:grey;
 border: 2px solid black;
 float:left;
-margin-left:10px;
+margin-left:50px;
+margin-bottom: 30px;
 }
 
 .right{
@@ -29,7 +31,8 @@ height:240px;
 background-color:grey;
 border: 2px solid black;
 float:left;
-margin-left:10px;
+margin-left:50px;
+margin-bottom: 30px;
 }
 
 .box1{
@@ -58,37 +61,38 @@ text-align: center;
 border: 2px solid black;
 width: 20%;
 margin-left: auto;
-white-space:nowrap;
 }
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
-  #box1 {
-    width: 30%;
+  .left{
+    width: 335px;
+    height: 200px;
   }
-  #box2 {
-    width: 30%;
-    height: 150px;
+  .middle {
+    width: 335px;
+    height: 200px;
   }
-  #box3 {
-    width: 30%;
-    height: 150px;
+  .right{
+    width: 335px;
+    height: 200px;
   }
 }
 
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  #box1 {
-    width: 30%;
+  .left {
+    width: 335px;
+    height: 200px;
   }
-  #box2 {
-    width: 30%;
-    height: 100px;
+  .middle {
+    width: 335px;
+    height: 200px;
   }
-  #box3 {
-    width: 30%;
-    height: 150px;
+  .right{
+     width: 335px;
+    height: 200px;
   }
   
 }
@@ -97,23 +101,24 @@ white-space:nowrap;
 
 /********** Small devices only **********/
 @media (min-width: 767px) {
-  #box1 {
-    width: 30%;
+  .left {
+    width: 335px;
+    height: 200px;
   }
-  #box2 {
-    width: 30%;
-    height: 100px;
+  .middle {
+    width: 335px;
+    height: 200px;
   }
-  #box3 {
-    width: 80%;
-    height: 150px;
+  .right {
+    width: 330px;
+    height: 200px;
   }
   
 }
 	</style>
 </head>
 <body>
-<h1>Our Menu</h1>
+<h1 align="center">Our Menu</h1>
 <div class="left">
 <div class="box1">
 <p><b>Chicken</b></p></div>
