@@ -1,142 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>assignment</title>
-	<style type="text/css">
-.left{
-width:335px;
-height:240px;
-background-color:grey;
-float:left;
-margin-left:50px;
-border: 2px solid black;
-margin-bottom: 30px;
-display:block;
+	<title>assignment-2</title>
+	<style>
+	*{
+  box-sizing: border-box;
+}
+body {
+  margin-right: 20px;
+}
+h1 {
+  text-align: center;
+}
+section {
+  background-color: #bbbcbf;
+  width: 32%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0.3%;
+  border: 1px solid black;
+  position: relative;
+}
+section div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 1.75em;
+  width: 150px;
+  text-align: center;
+}
+#chicken{
+  background-color: pink;
+}
+#Beef{
+  background-color: maroon;
+}
+#Sushi{
+  background-color: yellow;
+}
+ p {
+  padding-top: 20px;
+  font-size: 1.25em;
+  text-align: justify;
 }
 
-
-.middle{
-width:335px;
-height:240px;
-background-color:grey;
-border: 2px solid black;
-float:left;
-margin-left:50px;
-margin-bottom: 30px;
-}
-
-.right{
-width:335px;
-height:240px;
-background-color:grey;
-border: 2px solid black;
-float:left;
-margin-left:50px;
-margin-bottom: 30px;
-}
-
-.box1{
-background-color: pink;
-color:black;
-text-align: center;
-border: 2px solid black;
-width: 20%;
-margin-left: auto;
-}
-
-.box2{
-background-color: maroon;
-color:white;
-text-align: center;
-border: 2px solid black;
-width: 20%;
-margin-left: auto;
-}
-
-
-.box3{
-background-color: yellow;
-color:black;
-text-align: center;
-border: 2px solid black;
-width: 20%;
-margin-left: auto;
-}
-
-/********** Large devices only **********/
-@media (min-width: 992px) {
-  .left{
-    width: 335px;
-    height: 200px;
+/**desktop view**/
+@media (min-width: 992px) and (max-width: 1199px)  {
+  .col-md-4 {
+    width: 33.33%;
   }
-  .middle {
-    width: 335px;
-    height: 200px;
+}
+/**tablet view**/
+@media (min-width: 768px) and (max-width: 991px){
+  .col-sm-6 {
+    width: 50.00%;
   }
-  .right{
-    width: 335px;
-    height: 200px;
+  .col-sm-12 {
+    width: 99%;
+  }
+}
+/**mobile view**/
+@media (max-width: 767px) {
+  .col-xs-12 {
+    width: 100%;
   }
 }
 
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .left {
-    width: 335px;
-    height: 200px;
-  }
-  .middle {
-    width: 335px;
-    height: 200px;
-  }
-  .right{
-     width: 335px;
-    height: 200px;
-  }
-  
-}
-
-
-
-/********** Small devices only **********/
-@media (min-width: 767px) {
-  .left {
-    width: 335px;
-    height: 200px;
-  }
-  .middle {
-    width: 335px;
-    height: 200px;
-  }
-  .right {
-    width: 330px;
-    height: 200px;
-  }
-  
-}
-	</style>
+</style>
 </head>
 <body>
-<h1 align="center">Our Menu</h1>
-<div class="left">
-<div class="box1">
-<p><b>Chicken</b></p></div>
-<p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p>
+<h1 align="center">OUR MENU</h1>
+
+<div class="row" align="center">
+  <section class=".col-lg-4 col-md-4 col-sm-6 col-xs-12">
+  <div id="chicken">Chicken</div>
+<p align="center">lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p></section>
+  <section class=".col-lg-4 col-md-4 col-sm-6 col-xs-12">
+  <div id="Beef">Beef</div>
+  <p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p></section>
+  <section class=".col-lg-4 col-md-4 col-sm-6 col-xs-12">
+  <div id="Sushi">Sushi</div>
+  <p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p></section>
+  
 </div>
 
-
-<div class="middle">
-<div class="box2">
-<p><b>Beef</b></p></div>
-<p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p>
-</div>
-
-
-<div class="right">
-<div class="box3">
-<p><b>Sushi</b></p></div>
-<p>lorem ipsum dolor sit omet,consectetur odipisicing elit,sed do elismod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ed commodo consequot.</p>
-</div>
 </body>
 </html>
